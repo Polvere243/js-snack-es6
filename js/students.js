@@ -35,3 +35,9 @@ const students = [
         vote: 84,
     }
 ]
+
+const over70Votes = students.filter(({vote}) => {
+    return (vote > 70); 
+})
+
+console.log(over70Votes);
