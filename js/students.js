@@ -1,38 +1,47 @@
+const generateStudentList = () => {
+    let list = '<ul class="students-list">';
+    for (let i = 0; i < studentsNames.length; i++) {
+        list += `<li class="student">${studentsNames[i]}</li>`;
+    }
+    list += "</ul>";
+
+    sectionElement.innerHTML = list;
+}
 const sectionElement = document.querySelector("section");
 const students = [
     {
         ID: 213,
-        name: "Marco della Rovere",
+        fullname: "Marco della Rovere",
         vote: 78,
     },
     {
         ID: 110,
-        name: "Paola Cortellessa",
+        fullname: "Paola Cortellessa",
         vote: 96,
     },
     {
         ID: 250,
-        name: "Andrea Mantegna",
+        fullname: "Andrea Mantegna",
         vote: 48,
     },
     {
         ID: 145,
-        name: "Gaia Borromini",
+        fullname: "Gaia Borromini",
         vote: 74,
     },
     {
         ID: 196,
-        name: "Luigi Grimaldello",
+        fullname: "Luigi Grimaldello",
         vote: 68,
     },
     {
         ID: 102,
-        name: "Piero della Francesca",
+        fullname: "Piero della Francesca",
         vote: 50,
     },
     {
         ID: 120,
-        name: "Francesca da Polenta",
+        fullname: "Francesca da Polenta",
         vote: 84,
     }
 ]
@@ -50,20 +59,12 @@ const voteIdStudents = students.filter(({vote, ID}) => {
 
 console.log(voteIdStudents);
 
-const studentsNames = students.map(({name}) => {
-    return name.toUpperCase();
+const studentsNames = students.map(({fullname}) => {
+    return fullname.toUpperCase();
 })
 
 console.log(studentsNames);
 
-const generateStudentItem = () => {
-    let item = "<ul>";
-    const studentName = students.forEach(({name}) => {
-        item += `<li>${name}</li>`;
-    })
-    item += "</ul>";
-
-    sectionElement.innerHTML = items;
 
 
-}
+generateStudentList();
