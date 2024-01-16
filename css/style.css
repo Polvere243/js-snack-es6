@@ -4,3 +4,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* lista ed elementi */
+
+.students-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.student{
+    color: blue;
+    font-size: 24px;
+    background-color: goldenrod;
+}
