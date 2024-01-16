@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+/* generici */
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* lista ed elementi */
 
 .students-list{
@@ -14,6 +23,7 @@
     justify-content: center;
     align-items: center;
     list-style-type: none;
+    gap: 20px;
 }
 
 .student{
