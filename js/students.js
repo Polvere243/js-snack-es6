@@ -37,7 +37,20 @@ const students = [
 ]
 
 const over70Votes = students.filter(({vote}) => {
-    return (vote > 70); 
+    return (vote >= 70); 
 })
 
 console.log(over70Votes);
+
+const voteIdStudents = students.filter(({vote, ID}) => {
+    return (vote >= 70 && ID >= 120);
+}
+)
+
+console.log(voteIdStudents);
+
+const studentsNames = students.map(({name}) => {
+    return name.toUpperCase();
+})
+
+console.log(studentsNames);
