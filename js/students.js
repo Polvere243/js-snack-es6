@@ -1,3 +1,4 @@
+const sectionElement = document.querySelector("section");
 const students = [
     {
         ID: 213,
@@ -54,3 +55,15 @@ const studentsNames = students.map(({name}) => {
 })
 
 console.log(studentsNames);
+
+const generateStudentItem = () => {
+    let item = "<ul>";
+    const studentName = students.forEach(({name}) => {
+        item += `<li>${name}</li>`;
+    })
+    item += "</ul>";
+
+    sectionElement.innerHTML = items;
+
+
+}
