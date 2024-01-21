@@ -1,3 +1,4 @@
+console.log("js ok");
 const bicycles = [
     {
         name: "Guerciotti Veloce",
@@ -12,3 +13,4 @@ const bicycles = [
         weight: 1,
     }
 ]
+
