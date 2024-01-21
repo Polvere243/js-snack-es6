@@ -15,8 +15,8 @@ const bicycles = [
 
 let lightestBicycle = bicycles[0];
 
-for (let i = 0; i < bicycles.length; i++) {
-    const bicycle = bicycles[i];
-    if (bicycle.weight < lightestBicycle.weight) lightestBicycle = bicycle;
-}
+bicycles.forEach (bicycle => {
+    const {weight} = bicycle;
+    if (weight < lightestBicycle.weight) lightestBicycle = bicycle;
+})
 console.log(lightestBicycle);
