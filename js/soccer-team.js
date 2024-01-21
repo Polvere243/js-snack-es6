@@ -24,3 +24,10 @@ teams.forEach (team => {
 })
 
 console.table(teams);
+
+const nameAndFouls = teams.map (team => {
+    const {name, fouls} = team;
+    return {name, fouls};
+}) 
+
+console.table(nameAndFouls);
