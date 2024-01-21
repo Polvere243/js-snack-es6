@@ -1,4 +1,3 @@
-console.log("js ok");
 const bicycles = [
     {
         name: "Guerciotti Veloce",
@@ -14,3 +13,10 @@ const bicycles = [
     }
 ]
 
+let lightestBicycle = bicycles[0];
+
+for (let i = 0; i < bicycles.length; i++) {
+    const bicycle = bicycles[i];
+    if (bicycle.weight < lightestBicycle.weight) lightestBicycle = bicycle;
+}
+console.log(lightestBicycle);
